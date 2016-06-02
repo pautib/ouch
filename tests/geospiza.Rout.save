@@ -1,7 +1,7 @@
 
-R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
-Copyright (C) 2015 The R Foundation for Statistical Computing
-Platform: x86_64-unknown-linux-gnu (64-bit)
+R version 3.3.0 (2016-05-03) -- "Supposedly Educational"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -165,6 +165,7 @@ $sic
 $dof
 [1] 5
 
+> plot(b1)
 > 
 > ### evaluate an OU model with a single, global selective regime
 > otd$regimes <- as.factor("global")
@@ -225,7 +226,9 @@ $sic
 $dof
 [1] 8
 
+> plot(h1)
+> 
 > 
 > proc.time()
    user  system elapsed 
-  1.848   0.036   1.908 
+  2.636   0.120   2.865 

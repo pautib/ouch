@@ -31,6 +31,7 @@ ot <- with(otd,ouchtree(nodes=nodes,ancestors=ancestors,times=times,labels=label
 
 b1 <- brown(tree=ot,data=otd[c("tarsusL","beakD")])
 summary(b1)
+plot(b1)
 
 ### evaluate an OU model with a single, global selective regime
 otd$regimes <- as.factor("global")
@@ -43,3 +44,5 @@ h1 <- hansen(
              maxit=10000
              )
 summary(h1)
+plot(h1)
+

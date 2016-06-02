@@ -1,7 +1,7 @@
 
-R version 2.10.1 (2009-12-14)
-Copyright (C) 2009 The R Foundation for Statistical Computing
-ISBN 3-900051-07-0
+R version 3.3.0 (2016-05-03) -- "Supposedly Educational"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -22,6 +22,9 @@ Loading required package: subplex
 > tr <- with(x,ouchtree(nodes=node,ancestors=ancestor,times=time,labels=species))
 > toc <- Sys.time()
 > print(toc-tic)
-Time difference of 0.01078105 secs
+Time difference of 0.007991076 secs
 > plot(tr)
 > 
+> proc.time()
+   user  system elapsed 
+  0.464   0.040   0.475 

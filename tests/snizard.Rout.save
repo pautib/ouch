@@ -1,7 +1,7 @@
 
-R version 2.10.1 (2009-12-14)
-Copyright (C) 2009 The R Foundation for Statistical Computing
-ISBN 3-900051-07-0
+R version 3.3.0 (2016-05-03) -- "Supposedly Educational"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -25,7 +25,7 @@ Loading required package: ape
 > tree.1 <- ape2ouch(tree)
 > toc <- Sys.time()
 > print(toc-tic)
-Time difference of 1.008582 secs
+Time difference of 0.5051589 secs
 > tree.data <- merge(
 +                    as(tree.1,"data.frame"),
 +                    squam.data,
@@ -52,7 +52,7 @@ Time difference of 1.008582 secs
 > h4 <- hansen(data=tree.data['log.SVL.SE'],tree.2,tree.data['OU2'],sqrt.alpha=0.5,sigma=1,fit=F)
 > toc <- Sys.time()
 > print(toc-tic)
-Time difference of 0.3863358 secs
+Time difference of 0.1296217 secs
 > model.fits <- c(h1,h2,h3,h4)
 > names(model.fits) <- c("BM.1","BM.2","OU2.1","OU2.2")
 > sapply(model.fits,function(x)c(unlist(coef(x)),summary(x)$aic.c))
@@ -85,3 +85,6 @@ theta.log.SVL.SE.ancestral               alpha.matrix
                   1.000000                 413.599123 
 
 > 
+> proc.time()
+   user  system elapsed 
+  1.576   0.076   1.632 
