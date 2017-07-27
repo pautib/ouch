@@ -1,11 +1,13 @@
 
-R version 3.3.0 (2016-05-03) -- "Supposedly Educational"
-Copyright (C) 2016 The R Foundation for Statistical Computing
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -85,8 +87,6 @@ character(0)
 10                 10        11 0.43177961       NA       NA       NA       NA
 11                 11        12 0.20199544       NA       NA       NA       NA
 12                 12         1 0.08441191       NA       NA       NA       NA
-13 Pinaroloxias    13         1 1.00000000 4.188600 2.980200 2.311100 1.547500
-15   Platyspiza    15        11 1.00000000 4.419686 3.270543 2.331471 2.347471
 22  conirostris    22         7 1.00000000 4.349867 2.984200 2.654400 2.513800
 20   difficilis    20         9 1.00000000 4.224067 2.898917 2.277183 2.011100
 24       fortis    24         5 1.00000000 4.244008 2.894717 2.407025 2.362658
@@ -96,6 +96,8 @@ character(0)
 19      pallida    19         4 1.00000000 4.265425 3.089450 2.430250 2.016350
 18     parvulus    18         2 1.00000000 4.131600 2.973060 1.974420 1.873540
 16       pauper    16         3 1.00000000 4.232500 3.035900 2.187000 2.073400
+13 Pinaroloxias    13         1 1.00000000 4.188600 2.980200 2.311100 1.547500
+15   Platyspiza    15        11 1.00000000 4.419686 3.270543 2.331471 2.347471
 17   psittacula    17         2 1.00000000 4.235020 3.049120 2.259640 2.230040
 21     scandens    21         8 1.00000000 4.261222 2.929033 2.621789 2.144700
      gonysW
@@ -111,8 +113,6 @@ character(0)
 10       NA
 11       NA
 12       NA
-13 1.630100
-15 2.282443
 22 2.360167
 20 1.929983
 24 2.221867
@@ -122,6 +122,8 @@ character(0)
 19 1.949125
 18 1.813340
 16 1.962100
+13 1.630100
+15 2.282443
 17 2.073940
 21 2.036944
 > ### this data-frame now contains the data as well as the tree geometry
@@ -229,6 +231,3 @@ $dof
 > plot(h1)
 > 
 > 
-> proc.time()
-   user  system elapsed 
-  2.636   0.120   2.865 

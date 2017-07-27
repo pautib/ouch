@@ -1,11 +1,13 @@
 
-R version 3.3.0 (2016-05-03) -- "Supposedly Educational"
-Copyright (C) 2016 The R Foundation for Statistical Computing
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -40,7 +42,7 @@ Loading required package: subplex
 > b5 <- sapply(simdat,function(x)summary(update(h5,data=x))$aic.c)
 > toc <- Sys.time()
 > print(toc-tic)
-Time difference of 2.736647 secs
+Time difference of 2.693925 secs
 > cat("approximate 95% AIC.c cutoff",signif(quantile(b1-b5,0.95),digits=3),"\n")
 approximate 95% AIC.c cutoff 2.58 
 > 
@@ -74,6 +76,3 @@ sic                -55.1610 -27.757
 dof                  5.0000   5.000
 > 
 > 
-> proc.time()
-   user  system elapsed 
-  8.676   0.072   8.729 
