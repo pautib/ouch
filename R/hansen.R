@@ -198,7 +198,7 @@ hansen <- function (data, tree, regimes, sqrt.alpha, sigma,
     names(theta[[n]]) <- as.character(reg[[n]])
     count <- count+length(reg[[n]])
   }
-  
+  print(sol)
   new(
       'hansentree',
       as(tree,'ouchtree'),
